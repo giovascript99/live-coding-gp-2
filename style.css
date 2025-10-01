@@ -1,0 +1,47 @@
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+h1, h2, h3, .h1, .h2, .h3{
+    font-family: "Electrolize", sans-serif;
+}
+
+/* Variabili */
+:root{
+
+    /* Le variabili in CSS sono esattamente come delle proprietà, quindi una coppia  
+    chiave-valore */
+
+    --bl: #007FFF;
+    --lb: #84e6ff;
+    --w: #F2F3F4;
+}
+
+body{
+    background-color: var(--lb);
+    color: var(--w);
+}
+
+.bg-bl{
+    background-color: var(--bl);
+}
+
+.bg-lb{
+    background-color: var(--lb);
+}
+
+.bg-w{
+    background-color: var(--w);
+}
+
+.text-bl{
+    color: var(--bl);
+}
+
+.text-lb{
+    color: var(--lb);
+}
+
+.text-w{
+    color: var(--w);
+}
