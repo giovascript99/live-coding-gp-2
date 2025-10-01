@@ -12,9 +12,9 @@ h1, h2, h3, .h1, .h2, .h3{
     /* Le variabili in CSS sono esattamente come delle proprietà, quindi una coppia  
     chiave-valore */
 
-    --bl: #007FFF;
-    --lb: #84e6ff;
-    --w: #F2F3F4;
+    --bl: rgb(0, 110, 255);
+    --lb: rgb(132, 230, 255);
+    --w: rgb(242, 243, 244);
 }
 
 body{
@@ -44,4 +44,31 @@ body{
 
 .text-w{
     color: var(--w);
+}
+
+
+/* Header */
+.header-custom{
+    height: 92vh;
+    background-image: linear-gradient(rgba(0, 127, 255, 0.3), rgba(242, 243, 244, 0.3)) ,url("https://picsum.photos/2000");
+    background-position: center;
+    background-size: cover;
+}
+
+/* Navbar */
+.navbar{
+    min-height: 8vh;
+}
+
+.nav-link{
+    color: var(--w);
+    font-weight: bold;
+}
+
+.nav-link:hover{
+    color: var(--w);
+}
+
+.logo{
+    height: 50px
 }
