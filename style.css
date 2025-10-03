@@ -12,14 +12,14 @@ h1, h2, h3, .h1, .h2, .h3{
     /* Le variabili in CSS sono esattamente come delle proprietà, quindi una coppia  
     chiave-valore */
 
-    --bl: rgb(0, 110, 255);
-    --lb: rgb(132, 230, 255);
+    --bl: rgb(0, 44, 241);
+    --lb: rgb(162, 227, 243);
     --w: rgb(242, 243, 244);
 }
 
 body{
     background-color: var(--lb);
-    color: var(--w);
+    color: var(--bl);
 }
 
 .bg-bl{
@@ -46,6 +46,10 @@ body{
     color: var(--w);
 }
 
+.border-w{
+    border: 2px solid var(--w);
+}
+
 
 /* Header */
 .header-custom{
@@ -55,7 +59,9 @@ body{
     background-size: cover;
 }
 
+
 /* Navbar */
+
 .navbar{
     min-height: 8vh;
 }
@@ -72,3 +78,139 @@ body{
 .logo{
     height: 50px
 }
+
+
+/* Icons */
+
+.linea{
+    height: 5px;
+    background-color: var(--bl);
+    width: 60%;
+    position: relative;
+}
+
+.linea::before{
+    content: "";
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: var(--w);
+    border: 2px solid var(--bl);
+    position: absolute;
+    top: calc(50% - 10px);
+    left: calc(50% - 10px);
+}
+
+
+/* Timeline */
+
+.bor-left{
+    border-left: 2px solid var(--bl);
+}
+
+.bor-right{
+    border-right: 2px solid var(--bl);
+}
+
+.pallino-r{
+    position: relative;
+}
+
+.pallino-r::after{
+    content: '';
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: var(--w);
+    border: 2px solid var(--bl);
+    position: absolute;
+    top: 0px;
+    right: -24px;
+}
+
+.pallino-l{
+    position: relative;
+}
+
+.pallino-l::before{
+    content: '';
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: var(--w);
+    border: 2px solid var(--bl);
+    position: absolute;
+    top: 0px;
+    left: -24px;
+}
+
+
+/* Buttons */
+.button-custom{
+    height: 70px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    position: relative;
+}
+
+.top-left{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-top: 2px solid var(--w);
+    border-left: 2px solid var(--w);
+
+}
+
+.top-right{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-top: 2px solid var(--w);
+    border-right: 2px solid var(--w);
+}
+
+.bottom-left{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    border-bottom: 2px solid var(--w);
+    border-left: 2px solid var(--w);
+}
+
+.bottom-right{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    border-bottom: 2px solid var(--w);
+    border-right: 2px solid var(--w);
+}
+
+
+
+/* .pallino{
+    position: relative;
+}
+
+.pallino::after{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: var(--w);
+    border: 2px solid var(--bl);
+    top: 0px;
+    left: -23px;
+} */
