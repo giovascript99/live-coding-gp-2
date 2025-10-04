@@ -50,6 +50,10 @@ body{
     border: 2px solid var(--w);
 }
 
+.border-bl{
+    border: 2px solid var(--bl);
+}
+
 
 /* Header */
 .header-custom{
@@ -77,6 +81,10 @@ body{
 
 .logo{
     height: 50px
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
 }
 
 
@@ -214,3 +222,24 @@ body{
     top: 0px;
     left: -23px;
 } */
+
+
+/* Positioned */
+.col-left{
+    position: relative;
+    top: -30px;
+    left: 30px;
+    background-color: var(--lb);
+    transition: 0.5s;
+}
+
+.col-left:hover{
+    top: 0px;
+    left: 0px;
+}
+
+@media screen and (max-width: 600px){
+    .col-left{
+        position: static;
+    }
+}
